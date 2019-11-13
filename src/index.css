@@ -72,12 +72,12 @@ header h1 {
   width: 30px;
   height: 30px;
 
-  background-image: url('./page-leaves-left.svg');
+  background-image: url('arrow-down-mint.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 
-  transition: all 0.4 ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .faqs .faq .faq-answer {
