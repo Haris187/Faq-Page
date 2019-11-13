@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import Header from './Header';
 import FAQ from './FAQ';
 
-
 function App () {
   const [faqs, setFaqs] = useState([
     {
       question: 'In Britain more than 300,000 tonnes of clothing end up in landfill every year.',
-      answer: 'This has been estimated to be worth around £140 million. Read more here: http://www.wrap.org.uk/content/clothing-waste-prevention',
+      answer: 'This has been estimated to be worth around £140 million. Read more here: https://www.wrap.org.uk/content/clothing-waste-prevention',
       open: true
     },
     {
@@ -36,7 +35,13 @@ function App () {
       answer: 'Read more here: https://www.forbes.com/sites/jamesconca/2015/12/03/making-climate-change-fashionable-the-garment-industry-takes-on-global-warming/#3f33a9d579e4',
       open: false
     },
+    { question: 'Links',
+      answer: <a href={'https://www.forbes.com/sites/jamesconca/2015/12/03/making-climate-change-fashionable-the-garment-industry-takes-on-global-warming/#3f33a9d579e4'}>Google</a>,
+      open: false
+    }
   ]);
+
+  
 
   const toggleFAQ = index => {
     setFaqs(faqs.map((faq, i) => {
